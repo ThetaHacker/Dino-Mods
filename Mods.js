@@ -30,11 +30,11 @@ Press "B" to pause time
 Instant almost, pretty self explanitory
 */
 var downtrig = document.body;
-    downtrig.addEventListener("keydown", function(e) {if (e.keyCode === 83) {
+    downtrig.addEventListener("keydown", function(e) {if (e.keyCode === 40) {
         Runner.instance_.updateConfigSetting("GRAVITY",5)
 		
     }});
-downtrig.addEventListener("keyup", function(e) {if (e.keyCode === 83) {
+downtrig.addEventListener("keyup", function(e) {if (e.keyCode === 40) {
         Runner.instance_.updateConfigSetting("GRAVITY",0.6)
 		
     }});
