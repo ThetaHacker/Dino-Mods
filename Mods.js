@@ -25,3 +25,16 @@ Runner.instance_.gameOver = function() {}
 /* Time Pause Mod
 Press "B" to pause time
 */
+
+/* Instant Down Mod
+Instant almost, pretty self explanitory
+*/
+var downtrig = document.body;
+    downtrig.addEventListener("keydown", function(e) {if (e.keyCode === 83) {
+        Runner.instance_.updateConfigSetting("GRAVITY",5)
+		
+    }});
+downtrig.addEventListener("keyup", function(e) {if (e.keyCode === 83) {
+        Runner.instance_.updateConfigSetting("GRAVITY",0.6)
+		
+    }});
