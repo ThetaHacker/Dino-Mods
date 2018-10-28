@@ -31,7 +31,7 @@ Instant almost, pretty self explanitory
 */
 var downtrig = document.body;
     downtrig.addEventListener("keydown", function(e) {if (e.keyCode === 40) {
-        Runner.instance_.updateConfigSetting("GRAVITY",5)
+        Runner.instance_.updateConfigSetting("GRAVITY",10)
 		
     }});
 downtrig.addEventListener("keyup", function(e) {if (e.keyCode === 40) {
